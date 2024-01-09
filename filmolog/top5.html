@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+
+        h1 {
+            margin: 0;
+            color: red;
+        }
+
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <div class="container-fluid">
+        <div class="menu">
+            <a href="finalprojesi.html" >Ana Sayfa</a>
+            <a href="kategoriler.html" >Sinema Tarihi</a>
+            <a href="top5.html" >Top 5</a>
+            <a href="hakkimizda.html" >Hakkımızda</a>
+            <a href="iletisim.html" >İletişim</a>
+        </div>
+    
+    <div class="container-fluid">
+        <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="esaretinbedeli2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <!-- Add the text-center class to center-align the card body -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2">ESARETİN BEDELİ (1994)</h5>
+                        <div style="text-align: justify; position: relative; left: -10px;">
+                            <p>
+                                Birkaç yıl boyunca, iki mahkum bir dostluk kurar, teselli arar ve sonunda temel şefkat yoluyla kefaret arar.
+                            </p>
+                            <p>
+                                Yönetmen: Frank Darabont
+                            </p>
+                            <p>
+                                Oyuncular:  Tim Robbins , Morgan Freeman , Bob Gunton , William Sadler
+                            </p>
+                            <button onclick="showImdbRating(9.3, 'movieContent1')">IMDB</button>
+                            <!-- Add a unique id to the following div -->
+                            <div id="movieContent1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+            <div class="row">
+                <div class="col-md-6 order-2">
+                    <img src="batman.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <!-- Add the text-center class to center-align the card body -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2">KARA ŞÖVALYE (2008)</h5>
+                        <div style="text-align: justify; position: relative; left: -10px;">
+                            <p>
+                                Joker olarak bilinen tehdit Gotham halkını kasıp kavurmaya ve kaosa yol açtığında Batman, adaletsizlikle mücadele etme yeteneğinin en büyük psikolojik ve fiziksel testlerinden birini kabul etmek zorundadır.
+
+
+                            </p>
+                            <p>
+                                Yönetmen: Cristopher Nolan
+                            </p>
+                            <p>
+                                Oyuncular:  Christian Bale , Heath Ledger , Aaron Eckhart , Michael Caine
+                            </p>
+
+                            <button onclick="showImdbRating(9, 'movieContent2')">IMDB</button>
+                            <!-- Add a unique id to the following div -->
+                            <div id="movieContent2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="godfather.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <!-- Add the text-center class to center-align the card body -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2">THE GODFATHER (1972)</h5>
+                        <div style="text-align: justify; position: relative; left: -10px;">
+                            <p>
+                                Bir mafya ailesinin reisi olan Don Vito Corleone, imparatorluğunu en küçük oğlu Michael'a devretmeye karar verir. Ancak istemeden aldığı bu karar, sevdiklerinin hayatlarını büyük tehlikeye atar.
+                            </p>
+                            <p>
+                                Yönetmen: Francis Ford Coppola 
+                            </p>
+                            <p>
+                                Oyuncular: Oyuncular: Marlon Brando , Al Pacino , James Caan , Diane Keaton
+                            </p>
+                            <button onclick="showImdbRating(9.2, 'movieContent3')">IMDB</button>
+                            <!-- Add a unique id to the following div -->
+                            <div id="movieContent3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+            <div class="row">
+                <div class="col-md-6 order-2">
+                    <img src="godfather2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <!-- Add the text-center class to center-align the card body -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2">THE GODFATHER 2 (1974)</h5>
+                        <div style="text-align: justify; position: relative; left: -10px;">
+                            <p>
+                                Vito Corleone'nin 1920'lerin New York City'sindeki erken yaşamı ve kariyeri anlatılırken, oğlu Michael, aile suç örgütü üzerindeki hakimiyetini genişletip sıkılaştırıyor.
+
+
+                            </p>
+                            <p>
+                                Yönetmen: Francis Ford Coppola 
+                            </p>
+                            <p>
+                                Oyuncular: Al Pacino , Robert De Niro , Robert Duvall , Diane Keaton
+                            </p>
+                            <button onclick="showImdbRating(9, 'movieContent4')">IMDB</button>
+                            <!-- Add a unique id to the following div -->
+                            <div id="movieContent4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="fight.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <!-- Add the text-center class to center-align the card body -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2">DÖVÜŞ KULÜBÜ (1999)</h5>
+                        <div style="text-align: justify; position: relative; left: -10px;">
+                            <p>
+                                Uykusuz bir ofis çalışanı ve umursamaz bir sabun üreticisi, çok daha fazlasına dönüşen bir yeraltı dövüş kulübü oluşturur.
+                            </p>
+                            <p>
+                                Yönetmen: David Fincher 
+                            </p>
+                            <p>
+                                Oyuncular: Brad Pitt , Edward Norton , Meat Loaf , Zach Grenier
+                            </p>
+                            <button onclick="showImdbRating(8.8, 'movieContent5')">IMDB</button>
+                            <!-- Add a unique id to the following div -->
+                            <div id="movieContent5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Function modified to take both IMDb rating and the target div id as parameters
+        function showImdbRating(imdbRating, targetId) {
+            var movieContent = document.getElementById(targetId);
+            
+            // Check if IMDb rating has already been displayed
+            if (!movieContent.getAttribute('data-imdb-displayed')) {
+                var starElement = document.createElement("span");
+                starElement.innerHTML = "&#9733;";
+                starElement.style.color = "yellow";
+                starElement.style.marginRight = "5px";
+        
+                var ratingTextNode = document.createTextNode(imdbRating);
+        
+                movieContent.appendChild(starElement);
+                movieContent.appendChild(ratingTextNode);
+        
+                movieContent.setAttribute('data-imdb-displayed', true); // Set the flag to true
+            }
+        }
+    </script>
+
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('top5.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('top5en.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        
+    
+    
+    </body>
+    </html>
+
+
+

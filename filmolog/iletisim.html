@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>İletişim</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style>
+          .panel-group {
+            text-align: center;
+          }
+      
+          .panel {
+            border-radius: 15px;
+            margin-bottom: 10px;
+          }
+      
+          .panel-heading {
+            background-color: #8cd0e3;
+            color: #000000;
+            border-radius: 15px 15px 0 0;
+          }
+      
+          .panel-body {
+            background-color: #8cd0e3;
+            color: #000000;
+            border-radius: 0 0 15px 15px;
+          }
+
+          .list-group{
+            background-color: #8cd0e3;
+            color: #000000;
+            border-radius: 0 0 15px 15px;
+
+          }
+          .list-group-item{
+            background-color: #8cd0e3;
+            color: #000000;
+            border-radius: 0 0 15px 15px;
+
+          }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Sayfa arka planını siyah yapar */
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%; /* Logonun genişliğini 50% olarak ayarlar */
+            height: auto; /* Oranlı bir şekilde genişlik ayarı yapmak için */
+            display: block;
+            margin: 0 auto;
+            background-color: #000; /* Logonun arka planını siyah yapar */
+        }
+
+        h1 {
+            margin: 0;
+        }
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <div class="menu">
+        <a href="finalprojesi.html" >Ana Sayfa</a>
+        <a href="kategoriler.html" >Sinema Tarihi</a>
+        <a href="top5.html" >Top 5</a>
+        <a href="hakkimizda.html" >Hakkımızda</a>
+        <a href="iletisim.html" >İletişim</a>
+    </div>
+
+    <div class="container">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                  Sosyal Medya Hesaplarımız</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <ul class="list-group">
+                    <li class="list-group-item">Instagram: @filmolog</li>
+                    <li class="list-group-item">Twitter: @filmologtw</li>
+                    <li class="list-group-item">Facebook: Filmolog</li>
+                  </ul>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  Mail Adresi</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">filmolog@gmail.com</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  İletişim Numarası</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">+905529243975</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <br>
+        <p>BİZE MESAJ GÖNDERİN!</p>
+        <br>
+        <div class="form-group">
+          <label for="usr">Ad:</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+          <label for="surname">Soyad:</label>
+          <input type="text" class="form-control" id="surname">
+        </div>
+        <div class="form-group">
+          <label for="comment">Mesajınız:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button onclick="sendMessage()">Gönder</button>
+      </div>
+
+      <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('iletisim.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('iletisimen.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    
+      <script>
+        function sendMessage() {
+          // Get input values
+          var name = document.getElementById("usr").value;
+          var surname = document.getElementById("surname").value;
+          var message = document.getElementById("comment").value;
+    
+          // Check if all fields are filled
+          if (name && surname && message) {
+            // Send the message (you can replace this with your actual logic)
+            alert("Mesajınız gönderildi:\nAd: " + name + "\nSoyad: " + surname + "\nMesaj: " + message);
+    
+            // Clear the fields after sending
+            document.getElementById("usr").value = "";
+            document.getElementById("surname").value = "";
+            document.getElementById("comment").value = "";
+          } else {
+            alert("Lütfen tüm alanları doldurun.");
+          }
+        }
+      </script>
+      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

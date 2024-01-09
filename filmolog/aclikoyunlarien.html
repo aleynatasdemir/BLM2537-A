@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hunger Games</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Sayfa arka planını siyah yapar */
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%; /* Logonun genişliğini 50% olarak ayarlar */
+            height: auto; /* Oranlı bir şekilde genişlik ayarı yapmak için */
+            display: block;
+            margin: 0 auto;
+            background-color: #000; /* Logonun arka planını siyah yapar */
+        }
+
+        h1 {
+            margin: 0;
+        }
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            display: flex; /* Use flexbox */
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px; /* Add right margin to create space between image and text */
+        }
+        
+        .content p {
+            margin-top: 10px;
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <div class="menu">
+        <a href="finalprojesi.html" >Home</a>
+        <a href="kategoriler.html" >Cinema History</a>
+        <a href="top5.html" >Top 5</a>
+        <a href="hakkimizda.html" >About Us</a>
+        <a href="iletisim.html" >Contact</a>
+    </div>
+
+    <div class="content">
+        <img src="1198785.jpg" alt="İçerik Resmi">
+        <p>The highly anticipated local comedy of the year, "Ölümlü Dünya 2," was released on December 1st and was watched by over 400,000 people in the first three days. Directed by Ali Atay, the screenplay is written by Ali Atay, Feyyaz Yiğit, and Aziz Kedi. In addition to the cast from the first film, including Ahmet Mümtaz Taylan, Alper Kul, Doğu Demirkol, Feyyaz Yiğit, İrem Sak, Mehmet Özgür, Özgür Emre Yıldırım, and Sarp Apak, Reha Özcan and Giray Altınok have joined the cast. The first installment of the series can be watched on Netflix.
+
+            Before watching, here's what you need to know:
+            
+            For viewers unfamiliar with the Ölümlü Dünya universe, let's summarize the process of becoming a phenomenon:
+            The fifth film of The Hunger Games series, telling the story of Katniss Everdeen, titled "The Ballad Of The Songbirds And Snakes," has been released. Serving as a spin-off of the series, the film is set 64 years before the last film with Katniss. Although it has been eight years since the last film with Katniss, the film allows those unfamiliar with the series to start from scratch and even witness the early years of The Hunger Games. However, the film refrains from providing some details given in previous films. While reviewing The Hunger Games: The Ballad Of The Songbirds And Snakes, we will evaluate only this film independently of the previous films and books. So, whether there are spoilers in the article or not depends on whether you have followed the predecessors or not.
+            
+            Now, let's erase the traces of the books and previous films and go back to what we see and hear in this film alone. The film is set in a post-apocalyptic dystopian geography. After a great war and the subsequent destruction, the civilization as we know it has disappeared or at least its boundaries seem greatly weakened. There is a capital called Capitol where the Panem people live, and there are 12 different regions surrounding it. The Capitol administration and its people live in more than enough prosperity, and as a punishment for a rebellion that rose from the regions years ago, a game similar to gladiator fights is played with children collected from each region, broadcasted on television for the Capitol people to watch. This is called The Hunger Games.
+            
+            We see that the prosperity of the Capitol people, the pressure of their rulers on the regions, and most importantly, The Hunger Games are a reaction. A group called rebels organizes attacks on the city. Although there are very few areas that the Capitol cannot control, the rebels can cause losses to the Capitol people and leaders.
+            
+            While the film's costume designs are quite visually satisfying, the visual effects do not stand out, but they do not turn into a grand cinematic language. Despite focusing on child protagonists as main characters, the dystopian narrative is far more bloody and dark than the audience being defined as children. It contains elements of both a fantasy world like Harry Potter, a dark universe like "1984," and characters that darken as much as Game of Thrones. It immerses the audience into a much more pessimistic and magical world than The Chronicles of Narnia in the midst of a war.
+            </p>
+            
+    </div>
+
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('aclikoyunlari.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('aclikoyunlarien.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>

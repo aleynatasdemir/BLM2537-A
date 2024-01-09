@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Sayfa arka planını siyah yapar */
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%; /* Logonun genişliğini 50% olarak ayarlar */
+            height: auto; /* Oranlı bir şekilde genişlik ayarı yapmak için */
+            display: block;
+            margin: 0 auto;
+            background-color: #000; /* Logonun arka planını siyah yapar */
+        }
+
+        h1 {
+            margin: 0;
+        }
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px; /* Align image to the left by adding margin to the right */
+        }
+
+        .content p {
+            margin: 10px 0; /* Add margin to the top and bottom of each paragraph */
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <div class="menu">
+        <a href="finalprojesi.html" >Home</a>
+        <a href="kategoriler.html" >Cinema History</a>
+        <a href="top5.html" >Top 5</a>
+        <a href="hakkimizda.html" >About Us</a>
+        <a href="iletisim.html" >Contact</a>
+    </div>
+
+    <div class="content" id="movieContent">
+        <img src="neo.jpg" alt="İçerik Resmi">
+        <div>
+            <p>
+                <b>Hello! I'm Aleyna Taşdemir.</b><br>
+
+I've created this blog to share my passion for the world of cinema with you and to invite you on this enchanting journey. For me, film is not just a viewing experience but also an emotional journey. This blog aims to provide a wide range of information and experiences, from my favorite films to the latest releases, interesting developments in the world of cinema, and in-depth analyses.<br>
+
+Just as each film tells its unique story, this blog also reflects my love for cinema and my perspective. We aspire to connect you with current film reviews, recommendations, and intriguing topics related to the world of cinema.<br>
+
+We are here to embark on a journey of exploration in the world of film together. Join us on this adventure, and let's discover the magical world of movies together.<br>
+
+Thank you, and happy reading!<br>
+
+Aleyna Taşdemir
+            </p>
+        </div>
+    </div>
+
+    
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('hakkimizda.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('hakkimizdaen.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

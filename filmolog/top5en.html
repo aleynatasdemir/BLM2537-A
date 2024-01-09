@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+
+        h1 {
+            margin: 0;
+            color: red;
+        }
+
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <<div class="menu">
+        <a href="finalprojesi.html" >Home</a>
+        <a href="kategoriler.html" >Cinema History</a>
+        <a href="top5.html" >Top 5</a>
+        <a href="hakkimizda.html" >About Us</a>
+        <a href="iletisim.html" >Contact</a>
+    </div>
+
+    <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="esaretinbedeli2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <!-- Add the text-center class to center-align the card body -->
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-2">THE SHAWSHANK REDEMPTION (1994)</h5>
+                    <div style="text-align: justify; position: relative; left: -10px;">
+                        <p>
+                            Over the course of several years, two prisoners form a friendship, seek solace, and ultimately strive for redemption through fundamental compassion.
+                        </p>
+                        <p>
+                            Director: Frank Darabont
+                        </p>
+                        <p>
+                            Cast: Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+                        </p>
+                    
+                
+                        <button onclick="showImdbRating(9.3, 'movieContent1')">IMDB</button>
+                        <!-- Add a unique id to the following div -->
+                        <div id="movieContent1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="col-md-6 order-2">
+                <img src="batman.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <!-- Add the text-center class to center-align the card body -->
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-2">THE DARK KNIGHT (2008)</h5>
+                    <div style="text-align: justify; position: relative; left: -10px;">
+                        <p>
+                            When a threat known as the Joker wreaks havoc and brings chaos to the people of Gotham, Batman must face one of the greatest psychological and physical tests of his ability to combat injustice.
+                        </p>
+                        <p>
+                            Director: Christopher Nolan
+                        </p>
+                        <p>
+                            Cast: Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine
+                        </p>
+                    
+                
+                        <button onclick="showImdbRating(9, 'movieContent2')">IMDB</button>
+                        <!-- Add a unique id to the following div -->
+                        <div id="movieContent2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="godfather.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <!-- Add the text-center class to center-align the card body -->
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-2">THE GODFATHER (1972)</h5>
+                    <div style="text-align: justify; position: relative; left: -10px;">
+                        <p>
+                            Don Vito Corleone, the patriarch of a mafia family, decides to pass on his empire to his youngest son Michael. However, this decision, made unwillingly, puts the lives of his loved ones in great jeopardy.
+                        </p>
+                        <p>
+                            Director: Francis Ford Coppola
+                        </p>
+                        <p>
+                            Cast: Marlon Brando, Al Pacino, James Caan, Diane Keaton
+                        </p>
+                    
+                    
+                        <button onclick="showImdbRating(9.2, 'movieContent3')">IMDB</button>
+                        <!-- Add a unique id to the following div -->
+                        <div id="movieContent3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="col-md-6 order-2">
+                <img src="godfather2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <!-- Add the text-center class to center-align the card body -->
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-2">THE GODFATHER 2 (1974)</h5>
+                    <div style="text-align: justify; position: relative; left: -10px;">
+                        <p>
+                            The early life and career of Vito Corleone in 1920s New York City are depicted, while his son Michael tightens and expands his dominance over the family crime syndicate.
+                        </p>
+                        <p>
+                            Director: Francis Ford Coppola
+                        </p>
+                        <p>
+                            Cast: Al Pacino, Robert De Niro, Robert Duvall, Diane Keaton
+                        </p>
+                    
+                    
+                        <button onclick="showImdbRating(9, 'movieContent4')">IMDB</button>
+                        <!-- Add a unique id to the following div -->
+                        <div id="movieContent4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 mx-auto" style="max-width: 800px; background-color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="fight.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <!-- Add the text-center class to center-align the card body -->
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-2">FIGHT CLUB (1999)</h5>
+<div style="text-align: justify; position: relative; left: -10px;">
+    <p>
+        A sleep-deprived office worker and a carefree soap manufacturer create an underground fight club that evolves into something much more.
+    </p>
+    <p>
+        Director: David Fincher
+    </p>
+    <p>
+        Cast: Brad Pitt, Edward Norton, Meat Loaf, Zach Grenier
+    </p>
+
+
+                        <button onclick="showImdbRating(8.8, 'movieContent5')">IMDB</button>
+                        <!-- Add a unique id to the following div -->
+                        <div id="movieContent5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        // Function modified to take both IMDb rating and the target div id as parameters
+        function showImdbRating(imdbRating, targetId) {
+            var movieContent = document.getElementById(targetId);
+            
+            // Check if IMDb rating has already been displayed
+            if (!movieContent.getAttribute('data-imdb-displayed')) {
+                var starElement = document.createElement("span");
+                starElement.innerHTML = "&#9733;";
+                starElement.style.color = "yellow";
+                starElement.style.marginRight = "5px";
+        
+                var ratingTextNode = document.createTextNode(imdbRating);
+        
+                movieContent.appendChild(starElement);
+                movieContent.appendChild(ratingTextNode);
+        
+                movieContent.setAttribute('data-imdb-displayed', true); // Set the flag to true
+            }
+        }
+    </script>
+
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('top5.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('top5en.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        
+    
+    
+    </body>
+    </html>

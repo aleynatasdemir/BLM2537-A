@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .metin {
+            text-align: center;
+            margin: 5px 0;
+            margin-top: 100px;
+        }
+
+        .metin table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 15px; /* Make table borders rounded */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        .metin th, .metin td {
+            padding: 10px;
+            text-align: center;
+            color: #000; /* Set text color to black */
+        }
+
+        .metin th {
+            background-color: #000;
+            color: #fff; /* Set header text color to white */
+        }
+
+        .metin tr:nth-child(even) {
+            background-color: #343a40; /* Dark background color for even rows */
+        }
+
+        .metin tr:nth-child(odd) {
+            background-color: #495057; /* Light background color for odd rows */
+        }
+
+        .metin a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+    </div>
+    <div class="menu">
+        <a href="finalprojesi.html">Ana Sayfa</a>
+        <a href="kategoriler.html">Sinema Tarihi</a>
+        <a href="top5.html">Top 5</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
+    </div>
+    <div class="container-fluid">
+        <div class="metin">
+            <p><b> İŞTE 2024'TE ÇIKMASI BEKLENEN FİLMLERİN LİSTESİ:</b></p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Dune: Çöl Gezegeni Bölüm İki</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>Deadpool 3</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Joker: Folie à Deux</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Furiosa</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Untitled Venom Sequel</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>The Garfield Movie</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>Gladiator 2</td>
+                    </tr>
+                    <tr class="table-dark">
+                        <td>Kung Fu Panda 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('yenifilmler.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('yenifilmleren.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+

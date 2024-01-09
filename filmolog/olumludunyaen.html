@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ölümlü Dünya 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Sayfa arka planını siyah yapar */
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 50%; /* Logonun genişliğini 50% olarak ayarlar */
+            height: auto; /* Oranlı bir şekilde genişlik ayarı yapmak için */
+            display: block;
+            margin: 0 auto;
+            background-color: #000; /* Logonun arka planını siyah yapar */
+        }
+
+        h1 {
+            margin: 0;
+        }
+        .menu {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            display: flex; /* Use flexbox */
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px; /* Add right margin to create space between image and text */
+        }
+        
+        .content p {
+            margin-top: 10px;
+        }
+
+        #imageTable {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border-collapse: collapse;
+        }
+
+        #imageTable img {
+            max-width: 30px; /* veya istediğiniz bir maksimum genişlik */
+            max-height: 30px; /* veya istediğiniz bir maksimum yükseklik */
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Yatay Logo">
+        
+    </div>
+    <div class="menu">
+        <a href="finalprojesi.html" >Home</a>
+        <a href="kategoriler.html" >Cinema History</a>
+        <a href="top5.html" >Top 5</a>
+        <a href="hakkimizda.html" >About Us</a>
+        <a href="iletisim.html" >Contact</a>
+    </div>
+
+    <div class="content">
+        <img src="olumludunya.jpg" alt="İçerik Resmi">
+        <p>The highly anticipated local comedy of the year, "Ölümlü Dünya 2," was released on December 1st and garnered over 400 thousand views in the first three days. Directed by Ali Atay, the screenplay is credited to Ali Atay, Feyyaz Yiğit, and Aziz Kedi. In addition to the cast from the first film, including Ahmet Mümtaz Taylan, Alper Kul, Doğu Demirkol, Feyyaz Yiğit, İrem Sak, Mehmet Özgür, Özgür Emre Yıldırım, and Sarp Apak, new additions to the cast include Reha Özcan and Giray Altınok. The first installment of the series is available for streaming on Netflix.<br>
+            Before watching, here are some things you should know:<br>
+        
+            For viewers unfamiliar with the Ölümlü Dünya universe, a brief overview of its phenomenon process:
+            
+            - The first film was released in 2018, quickly spreading with its widely quoted lines and gaining a large fan base.
+            
+            - Despite the initial intention for Ali Atay to portray the character of Serbest, a risk was taken. Feyyaz Yiğit's portrayal of Serbest became one of the most beloved characters in the film, witnessing the rise of Feyyaz Yiğit's humor altogether.
+            
+            - Doğu Demirkol, who experienced his first cinema film with Ölümlü Dünya, starred in Nuri Bilge Ceylan's film "The Wild Pear Tree," which premiered at the 71st Cannes Film Festival.
+            
+            - News about the start of filming for the sequel to Ölümlü Dünya in March 2023 began to be shared.
+            
+            - The announcement of Giray Altınok joining the team, whom we began to know more closely with the BluTv series "Prens," raised expectations a bit more.
+            
+            - A week before the release of Ölümlü Dünya 2, the first film was re-screened at Kadıköy Cinema. Images of the entire audience reciting the lines by heart circulated on social media. In the following interview, Sarp Apak mentioned that the continuation of the series could depend on the success of the second film.
+            
+            Ölümlü Dünya 2 broke records upon its release. Whether the series will continue or not remains uncertain, but the film can be summarized as follows:<br>
+        
+            What is the story?<br>
+        
+            The Marble family, who have been contract killers for generations, has been unable to return home since Serbest, one of their members, leaked information while flirting outside. With Zafer's kidnapping, the nonexistent order of the family is further disrupted. Gazanfer, the head of the family, asks for help from an old friend to rescue Zafer. While the family struggles to save Zafer, each member also has to deal with their unique problems.
+        </p>
+        
+
+    </div>
+    
+    <table id="imageTable">
+        <tr>
+            <td>
+                <img src="trlogo.png" onclick="redirectToPage('olumludunya.html')" alt="Resim 1">
+            </td>
+            <td>
+                <img src="englogo.png" onclick="redirectToPage('olumludunyaen.html')" alt="Resim 2">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
